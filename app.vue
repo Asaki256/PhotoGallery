@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header><h1>ヘッダー</h1></header>
+  <UtilHeader />
   <main>
     <NuxtPage />
   </main>
