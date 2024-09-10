@@ -1045,7 +1045,7 @@ function resolveUnref(r) {
   return typeof r === "function" ? r() : unref(r);
 }
 function resolveUnrefHeadInput(ref) {
-  if (ref instanceof Promise)
+  if (ref instanceof Promise || ref instanceof Date || ref instanceof RegExp)
     return ref;
   const root = resolveUnref(ref);
   if (!ref || !root)
